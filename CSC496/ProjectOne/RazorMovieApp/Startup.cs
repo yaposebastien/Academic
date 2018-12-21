@@ -9,6 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+//Registering the database context with those two following lines
+using RazorMovieApp.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace RazorMovieApp
 {
@@ -31,6 +35,9 @@ namespace RazorMovieApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //Adding Database context
+            services.AddDbContext<RazorMovieAppContext>(options =>
+                    options.UseSqlite(Configuration.GetConnectionString("MovieContext")));    
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
