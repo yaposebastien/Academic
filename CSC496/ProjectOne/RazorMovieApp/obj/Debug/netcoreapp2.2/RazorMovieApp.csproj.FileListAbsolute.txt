@@ -28,3 +28,8 @@
 /home/yankees/Projects/Academic/CSC496/ProjectOne/RazorMovieApp/obj/Debug/netcoreapp2.2/RazorMovieApp.dll
 /home/yankees/Projects/Academic/CSC496/ProjectOne/RazorMovieApp/obj/Debug/netcoreapp2.2/RazorMovieApp.pdb
 /home/yankees/Projects/Academic/CSC496/ProjectOne/RazorMovieApp/obj/Debug/netcoreapp2.2/RazorMovieApp.csproj.CopyComplete
+/home/yankees/Projects/Academic/CSC496/ProjectOne/RazorMovieApp/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Create.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectOne/RazorMovieApp/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Delete.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectOne/RazorMovieApp/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Details.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectOne/RazorMovieApp/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Edit.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectOne/RazorMovieApp/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Index.g.cshtml.cs
