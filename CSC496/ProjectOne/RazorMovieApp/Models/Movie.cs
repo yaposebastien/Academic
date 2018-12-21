@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace RazorPagesMovie.Models
+namespace RazorMovieApp.Models
 {
     public class Movie
     {
