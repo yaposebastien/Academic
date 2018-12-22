@@ -5,8 +5,28 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="Home" class="active"><a href="#">Home</a></li>
+            <li role="Privacy"><a asp-area="" asp-page="/Privacy">Privacy</a></li>
+            <li role="CSC496"><a asp-area="" asp-page="/CSC496">CSC496</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Project name</h3>
+      </div>
+</div>
 
+      <div class="jumbotron">
+        <h1>Welcome</h1>
+        <p class="lead">Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">New movie</a></p>
+      </div>
+</div>
+
+<h1>Index</h1>
+<div class=".col-md-6 .col-md-offset-3">
 <p>
     <a asp-page="Create">Create New</a>
 </p>
@@ -68,3 +88,4 @@
 }
     </tbody>
 </table>
+</div>
