@@ -7,81 +7,24 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="Home" class="active"><a asp-page="/Movies">Home</a></li>
+            <li role="Home" class="active"><a asp-page="/Index">Home</a></li>
+            <li role="presentation" class="divider"></li>
+             <li role="ListOfMovies"><a asp-area="" asp-page="/Movies/Index">Movies</a></li>
+            <li role="presentation" class="divider"></li>
             <li role="Privacy"><a asp-area="" asp-page="/Privacy">Privacy</a></li>
-            <li role="CSC496"><a asp-area="" asp-page="/CSC496">CSC496</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="About"><a asp-area="" asp-page="/About">About</a></li>
           </ul>
         </nav>
       </div>
 
 
+      <div class="jumbotron">
+            <h1>Welcome</h1>
+            <p class="lead">Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+            <p>ASP.NET Core is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications.</p>
+            <p><a asp-page="/Movies/Index" class="btn btn-sm btn-success"  role="button">Learn more ...</a></p>
 
-    <div class="jumbotron">
-        <h1>Welcome</h1>
-        <p class="lead">Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-        <p><a class="btn btn-sm btn-success" asp-page="Create" role="button">New movie</a></p>
-    </div>
+      </div>
 
-
-        <p>
-            <a asp-page="Create">Create New</a>
-        </p>
-    <form>
-        <p>
-            <select asp-for="MovieGenre" asp-items="Model.Genres">
-                <option value="">All</option>
-            </select>
-            Title: <input type="text" asp-for="SearchString" />
-            <input type="submit" value="Search" />
-        </p>
-    </form>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Genre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movie[0].Rating)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Movie) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-             <td>
-                @Html.DisplayFor(modelItem => item.Rating)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
 </div>
