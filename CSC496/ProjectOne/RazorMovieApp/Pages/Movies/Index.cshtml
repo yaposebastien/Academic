@@ -79,10 +79,17 @@
                     @Html.DisplayFor(modelItem => item.Rating)
                 </td>
                 <td>
-                    <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                    <a asp-page="./Edit" asp-route-id="@item.ID"><button class="btn btn-success btn-sm">Edit</button></a>
                 </td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@item.ID"><button class="btn btn-info btn-sm">Details</button></a>
+
+                </td>
+                <td>
+                    <a asp-page="./Delete" asp-route-id="@item.ID"><button class="btn btn-danger btn-sm">Delete</button></a>
+
+                </td>
+                
             </tr>
     }
         </tbody>
