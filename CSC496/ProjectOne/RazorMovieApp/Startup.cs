@@ -36,7 +36,7 @@ namespace RazorMovieApp
             });
 
             //Adding Database context
-            services.AddDbContext<RazorMovieAppContext>(options =>
+            services.AddDbContext<RazorMovieAppContext>(options => 
                     options.UseSqlite(Configuration.GetConnectionString("MovieContext")));    
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
