@@ -1,7 +1,7 @@
 # Academic
 #Work and assignments toward Computer Science Degree
 
-*[CSC496]
-    *[ProjectOne]
-    *[ProjectTwo]
+*[CSC496](/CSC496)
+    *[ProjectOne](/ProjectOne)
+    
 
