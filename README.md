@@ -3,6 +3,6 @@
 
 1. [CSC496](/CSC496)
     1. [ProjectOne](CSC496/ProjectOne/RazorMovieApp)
-    1. [ProjectTwo](CSC496/projectTwo/WcuStudentApp)
+    1. [ProjectTwo](CSC496/ProjectTwo/WcuStudentApp)
     
 
