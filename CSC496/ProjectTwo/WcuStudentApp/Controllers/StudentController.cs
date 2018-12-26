@@ -15,5 +15,14 @@ namespace WcuStudentApp.Controllers
         {
             return View();
         }
+
+        //Passing Data from the controller
+        public IActionResult ListOfStudents(string name, int num = 1) 
+        {
+            ViewData["Message"] = "Student name: " +name;
+            ViewData["Num"] = num;
+
+            return View();
+        }
     }
 }
