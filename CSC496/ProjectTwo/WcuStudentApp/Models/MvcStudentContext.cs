@@ -8,7 +8,8 @@ namespace WcuStudentApp.Models
 {
     public class MvcStudentContext : DbContext
     {
-        public MvcStudentContext (DbContextOptions<MvcStudentContext> options) :base(options)
+        public MvcStudentContext (DbContextOptions<MvcStudentContext> options) 
+            : base(options)
         {
         }
 

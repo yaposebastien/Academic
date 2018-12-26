@@ -34,7 +34,8 @@ namespace WcuStudentApp
             });
 
             //Registering Database Context
-            services.AddDbContext<MvcStudentContext>(options => options.UseSqlite(Configuration.GetConnectionString("StudentContext")));
+            services.AddDbContext<MvcStudentContext>(options => 
+                options.UseSqlite(Configuration.GetConnectionString("StudentContext")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
