@@ -7,18 +7,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WcuStudentApp.Models;
 
-namespace WcuStudentApp.Controllers 
+namespace WcuStudentApp.Controllers
 {
-    public class AboutController : Controller 
+    public class StudentController : Controller
     {
         public IActionResult Index() 
         {
             return View();
-        } 
-
-       
-
+        }
     }
-
-
 }
