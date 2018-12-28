@@ -19,8 +19,13 @@ namespace WcuStudentApp.Controllers
         }
 
         // GET: Students
-        public async Task<IActionResult> Index(string studentSearchString)
+        public async Task<IActionResult> Index(string studentMajor, string studentSearchString)
         {
+            //Adding LINQ to get the list of genres
+            IQueryable<string> majorQuery = from stud in _context.Student
+                                            orderby stud.Major
+                                            select stud.Major;
+
             //Adding search capability in Index
             var students = from stud in _context.Student select stud;
 
@@ -29,8 +34,19 @@ namespace WcuStudentApp.Controllers
                 students = students.Where(std => std.LastName.Contains(studentSearchString));
             }
 
-            return View(await students.ToListAsync());
-            //return View(await _context.Student.ToListAsync());
+            if (!string.IsNullOrEmpty(studentMajor))
+            {
+                students = students.Where(std => std.Major == studentMajor);
+            }
+
+            var studentMajorVM = new StudentMajorViewModel
+            {
+                Majors = new SelectList(await majorQuery.Distinct().ToListAsync()),
+                Students = await students.ToListAsync()
+            };
+
+            return View(studentMajorVM);
+            
         }
 
         // GET: Students/Details/5
