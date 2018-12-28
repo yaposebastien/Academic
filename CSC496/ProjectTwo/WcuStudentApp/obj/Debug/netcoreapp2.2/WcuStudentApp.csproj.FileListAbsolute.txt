@@ -29,4 +29,8 @@
 /home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/WcuStudentApp.pdb
 /home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/WcuStudentApp.csproj.CopyComplete
 /home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/Razor/Views/About/Index.g.cshtml.cs
-/home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/Razor/Views/Student/Index.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/Razor/Views/Students/Create.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/Razor/Views/Students/Delete.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/Razor/Views/Students/Details.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/Razor/Views/Students/Edit.g.cshtml.cs
+/home/yankees/Projects/Academic/CSC496/ProjectTwo/WcuStudentApp/obj/Debug/netcoreapp2.2/Razor/Views/Students/Index.g.cshtml.cs

@@ -19,9 +19,18 @@ namespace WcuStudentApp.Controllers
         }
 
         // GET: Students
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string studentSearchString)
         {
-            return View(await _context.Student.ToListAsync());
+            //Adding search capability in Index
+            var students = from stud in _context.Student select stud;
+
+            if (!String.IsNullOrEmpty(studentSearchString))
+            {
+                students = students.Where(std => std.LastName.Contains(studentSearchString));
+            }
+
+            return View(await students.ToListAsync());
+            //return View(await _context.Student.ToListAsync());
         }
 
         // GET: Students/Details/5
