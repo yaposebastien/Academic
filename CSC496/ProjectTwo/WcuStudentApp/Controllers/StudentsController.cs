@@ -31,12 +31,12 @@ namespace WcuStudentApp.Controllers
 
             if (!String.IsNullOrEmpty(studentSearchString))
             {
-                students = students.Where(std => std.LastName.Contains(studentSearchString));
+                students = students.Where(stud => stud.LastName.Contains(studentSearchString));
             }
 
             if (!string.IsNullOrEmpty(studentMajor))
             {
-                students = students.Where(std => std.Major == studentMajor);
+                students = students.Where(stud => stud.Major == studentMajor);
             }
 
             var studentMajorVM = new StudentMajorViewModel
