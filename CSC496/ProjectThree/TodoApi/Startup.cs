@@ -13,7 +13,7 @@ using Microsoft.Extensions.Options;
 
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
-
+ using Swashbuckle.AspNetCore.Swagger;
 
 namespace TodoApi
 {
@@ -34,6 +34,11 @@ namespace TodoApi
                 opt.UseInMemoryDatabase("TodoList"));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //Register the Swagger generator
+            services.AddSwaggerGen(c=>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Todo App API", Version = "v1"});
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,7 +54,13 @@ namespace TodoApi
                 app.UseHsts();
             }
 
-            
+            app.UseSwagger();
+            app.UseSwaggerUI(c => 
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Todo App Api V1");
+                c.RoutePrefix = string.Empty;
+            }
+            );
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
