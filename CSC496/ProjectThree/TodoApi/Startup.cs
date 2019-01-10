@@ -37,7 +37,24 @@ namespace TodoApi
             //Register the Swagger generator
             services.AddSwaggerGen(c=>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Todo App API", Version = "v1"});
+                c.SwaggerDoc("v1", new Info 
+                { 
+                    Version = "v1",
+                    Title = "Todo App API",
+                    Description = "A simple ToDo Application built with ASP.NET Core Web Api",
+                    TermsOfService = "None",
+                    Contact = new Contact
+                    {
+                        Name = "Nke Sebastien Yapo",
+                        Email = "contact@nkeyapo.com",
+                        Url = "https://nkeyapo.com"
+                    },
+                    License =new License
+                    {
+                        Name = "Use under GPLv3"
+                        Url = "https://www.gnu.org/licenses/gpl-3.0.html"
+                    }
+                    });
             });
         }
 
