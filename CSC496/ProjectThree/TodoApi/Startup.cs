@@ -51,7 +51,7 @@ namespace TodoApi
                     },
                     License =new License
                     {
-                        Name = "Use under GPLv3"
+                        Name = "Use under GPLv3",
                         Url = "https://www.gnu.org/licenses/gpl-3.0.html"
                     }
                     });
