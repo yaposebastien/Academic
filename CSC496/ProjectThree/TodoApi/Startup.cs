@@ -45,7 +45,7 @@ namespace TodoApi
                     TermsOfService = "None",
                     Contact = new Contact
                     {
-                        Name = "Nke Sebastien Yapo",
+                        Name = "Nke Sebastien Yapo - CSC 496",
                         Email = "contact@nkeyapo.com",
                         Url = "https://nkeyapo.com"
                     },

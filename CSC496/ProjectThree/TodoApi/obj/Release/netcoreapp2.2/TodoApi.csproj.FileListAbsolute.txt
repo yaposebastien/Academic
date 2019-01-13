@@ -1,0 +1,14 @@
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/bin/Release/netcoreapp2.2/TodoApi.deps.json
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/bin/Release/netcoreapp2.2/TodoApi.runtimeconfig.json
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/bin/Release/netcoreapp2.2/TodoApi.runtimeconfig.dev.json
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/bin/Release/netcoreapp2.2/TodoApi.dll
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/bin/Release/netcoreapp2.2/TodoApi.pdb
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.csprojAssemblyReference.cache
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.csproj.CoreCompileInputs.cache
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.RazorAssemblyInfo.cache
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.RazorAssemblyInfo.cs
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.AssemblyInfoInputs.cache
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.AssemblyInfo.cs
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.RazorTargetAssemblyInfo.cache
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.dll
+/home/yankees/Projects/Academic/CSC496/ProjectThree/TodoApi/obj/Release/netcoreapp2.2/TodoApi.pdb
