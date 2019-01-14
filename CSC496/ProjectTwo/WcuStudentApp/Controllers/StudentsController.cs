@@ -19,7 +19,7 @@ namespace WcuStudentApp.Controllers
         }
 
         // GET: Students
-        public async Task<IActionResult> Index(string studentMajor, string studentSearchString)
+        public async Task<IActionResult> Index(string studentMajor, string studentLastName, string studentFirstName)
         {
             //Adding LINQ to get the list of genres
             IQueryable<string> majorQuery = from stud in _context.Student
@@ -29,9 +29,18 @@ namespace WcuStudentApp.Controllers
             //Adding search capability in Index
             var students = from stud in _context.Student select stud;
 
-            if (!String.IsNullOrEmpty(studentSearchString))
+            //This condition searches for the Last Name
+            if (!String.IsNullOrEmpty(studentLastName))
             {
-                students = students.Where(stud => stud.LastName.Contains(studentSearchString));
+                students = students.Where(stud => stud.LastName.Contains(studentLastName));
+                
+            }
+
+            //This condition searches for the First Name
+            if (!String.IsNullOrEmpty(studentFirstName))
+            {
+                students = students.Where(stud => stud.FirstName.Contains(studentFirstName));
+                
             }
 
             if (!string.IsNullOrEmpty(studentMajor))
