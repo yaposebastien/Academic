@@ -8,6 +8,7 @@ namespace WcuStudentApp.Models
         public List<Student> Students;
         public SelectList Majors;
         public string StudentMajor { get; set;}
-        public string StudentSearchString { get; set; }
+        public string StudentLastName { get; set; }
+        public string StudentFirstName { get; set; }
     }
 }
