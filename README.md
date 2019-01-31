@@ -6,6 +6,6 @@
     1. [ProjectTwo](CSC496/ProjectTwo/WcuStudentApp)
     1. [ProjectThree](CSC496/ProjectThree)
     1. [ProjectFour](CSC496/ProjectFour)
-2.[csc497 - Advanced Topics in Computer Security - Modern Malware Analysis](/csc497)
+2. [csc497 - Advanced Topics in Computer Security - Modern Malware Analysis](/csc497)
     2. [Lab0](CSC497/Lab0)
 
