@@ -7,5 +7,6 @@
     1. [ProjectThree](CSC496/ProjectThree)
     1. [ProjectFour](CSC496/ProjectFour)
 2. [csc497 - Advanced Topics in Computer Security - Modern Malware Analysis](/CSC497)
-    1. [Lab0](CSC497/Lab0)
+    1. [Lab0: DLL Injection](CSC497/Lab0)
+    1. [Lab1: Build An Heuristic Malware Detection System](CSC497/Lab1)
 
